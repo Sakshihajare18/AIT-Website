@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .client-box {
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .client-box:hover {
+    border-color: #0dcaf0; /* Bootstrap info color */
+    box-shadow: 0 0 15px #0dcaf0;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+  
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo">
+    </a>
+
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Our Roots</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Growth Offerings</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tech Pulse</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">AIT Hub</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="image1.jpeg" class="d-block w-100" alt="First Slide">
+      <div class="carousel-caption d-none d-md-block text-start" style="left: 5%; right: auto; top: 50%; transform: translateY(-50%);">
+        <h5 class="fw-bold text-info display-4">From Teams To Transformation<br>Niraxo Leads The Way</h5>
+        <p class="text-white fs-4">Our HRMS Built For Modern Teams — And Just The First Of Many Enterprise Solutions In The Making.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="image2.jpeg" class="d-block w-100" alt="Second Slide">
+      <div class="carousel-caption d-none d-md-block text-start" style="left: 5%; right: auto; top: 50%; transform: translateY(-50%);">
+        <h5 class="fw-bold text-info display-4">Digital Transformation<br>with a Human Touch</h5>
+        <p class="text-white fs-4">Bridging Care & Technology For Scalable, Secure Healthcare Solution</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="image3.webp" class="d-block w-100" alt="Third Slide">
+      <div class="carousel-caption d-none d-md-block text-start" style="left: 5%; right: auto; top: 50%; transform: translateY(-50%);">
+        <h5 class="fw-bold text-info display-4">Reshaping BFSI<br>With Digital Intelligence</h5>
+        <p class="text-white fs-4">Secure, Scalable, And Smart IT Solutions To Accelerate Financial Innovation</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <img src="image4.webp" class="d-block w-100" alt="Fourth Slide">
+      <div class="carousel-caption d-none d-md-block text-start" style="left: 5%; right: auto; top: 50%; transform: translateY(-50%);">
+        <h5 class="fw-bold text-info display-4">Where PropTech Meets<br>Possibilities Through Innovation</h5>
+        <p class="text-white fs-4">Transform Customer Journeys With AI-Driven Insights And Next-Gen IT Solutions.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- Quintessence Section -->
+<section class="py-5 bg-black text-white">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="display-5 fw-bold text-info">THE QUINTESSENCE OF<br>AIT GLOBAL</h2>
+        <p class="mt-3 fs-5">
+          We strive to be more than just technology solution providers - we're your partners in business-focused digital innovations!<br>
+          With us, you can develop a digital transformation roadmap tailored to your unique needs.
+        </p>
+        <a href="#" class="btn btn-outline-info mt-3">Find Out What Your Business Needs</a>
+      </div>
+    </div>
+    <div class="row text-center mt-5">
+      <div class="col-md-3 mb-4">
+        <h3 class="display-6 fw-bold text-info">99%</h3>
+        <p class="fs-5">Client Retention Rate</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h3 class="display-6 fw-bold text-info">100%</h3>
+        <p class="fs-5">Client Satisfaction Rate</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h3 class="display-6 fw-bold text-info">98%</h3>
+        <p class="fs-5">Project Success Rate</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h3 class="display-6 fw-bold text-info">92%</h3>
+        <p class="fs-5">Employee Satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Clients Section -->
+<section class="py-5 bg-black text-white">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="display-5 fw-bold text-info">OUR CLIENTS</h2>
+        <p class="fs-5">Trusted by forward-thinking businesses across industries.</p>
+      </div>
+    </div>
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-3">
+  <div class="client-box">
+    <p class="fw-bold fs-5 text-white mb-0">AMI</p>
+  </div>
+</div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">AMG</p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">Emcure</p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">Kon Pro</p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">PwC</p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">RARE</p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">SHARP LOGISTICS PVT. LTD.</p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="client-box">
+            <p class="fw-bold fs-5 text-white mb-0">Shiperone</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p class="text-info fs-5">And Other Global Industry Leaders...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-black text-white pt-4 pb-3 mt-5">
+  <div class="container">
+
+    <!-- Email -->
+    <p class="mb-2 fs-6 text-center">
+      <a href="mailto:inquiries@aitglobalindia.com" class="text-white text-decoration-none">
+        inquiries@aitglobalindia.com
+      </a>
+    </p>
+
+    <!-- Social Media Links -->
+    <div class="text-center mb-3">
+      <a href="https://www.linkedin.com/company/aitglobalindia/" target="_blank" class="text-info me-3 fs-5">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/AITGLOBALINDIA" target="_blank" class="text-info me-3 fs-5">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UC6ofX6uGztnJiU4W1ReD-gA/featured" target="_blank" class="text-info me-3 fs-5">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/aitglobalindia?igsh=MWFpNmJmeHhvOG9wbQ==" target="_blank" class="text-info me-3 fs-5">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://twitter.com/AITGlobalIndia" target="_blank" class="text-info fs-5">
+        <i class="bi bi-twitter"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="mb- fs-6 text-center">
+      © 2025 <strong>AIT Global India Pvt. Ltd.</strong> All Rights Reserved.
+    </p>
+
+    <!-- Policy Links -->
+    <div class="row">
+      <div class="col-6 text-start">
+        <a href="https://aitglobalindia.com/privacy-policy/" class="text-info text-decoration-none">
+          Privacy Policy
+        </a>
+      </div>
+      <div class="col-6 text-end">
+        <a href="https://aitglobalindia.com/terms&conditions/" class="text-info text-decoration-none">
+          Terms & Conditions
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

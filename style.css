@@ -1,0 +1,42 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .client-box {
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .client-box:hover {
+    border-color: #0dcaf0; /* Bootstrap info color */
+    box-shadow: 0 0 15px #0dcaf0;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+/* Make dropdown menu background black */
+.dropdown-menu {
+  background-color: #000; /* Black */
+  border: none;
+}
+
+/* Make text white */
+.dropdown-item {
+  color: white;
+}
+
+/* Optional: Hover effect */
+.dropdown-item:hover {
+  background-color: #0dcaf0; /* Dark grey */
+  color: white;
+}
